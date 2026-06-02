@@ -1,0 +1,174 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-starter-web",
+    "version": "3.5.14",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-json",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-tomcat",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-webmvc",
+          "version": {
+            "requires": "6.2.18"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-web-3.5.14.jar",
+          "url": "spring-boot-starter-web-3.5.14.jar",
+          "size": 4805,
+          "sha512": "429060a3f0d61e040534235dfe8c9c70976e1f77470388c25c4d78214a0d91c5b2292a04402ed01af72107093c30fd2c3d022505b4aa0f0f14d9a5f1e4125396",
+          "sha256": "d89acd68cd5b812b576146e54d259120aa34957a06f29adff0225c825598bd90",
+          "sha1": "07c188e3c435c305a240a325952559d688ed61d8",
+          "md5": "59ed0a3c8833f0d927c44596ed77f467"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-json",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-tomcat",
+          "version": {
+            "requires": "3.5.14"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-webmvc",
+          "version": {
+            "requires": "6.2.18"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-web-3.5.14.jar",
+          "url": "spring-boot-starter-web-3.5.14.jar",
+          "size": 4805,
+          "sha512": "429060a3f0d61e040534235dfe8c9c70976e1f77470388c25c4d78214a0d91c5b2292a04402ed01af72107093c30fd2c3d022505b4aa0f0f14d9a5f1e4125396",
+          "sha256": "d89acd68cd5b812b576146e54d259120aa34957a06f29adff0225c825598bd90",
+          "sha1": "07c188e3c435c305a240a325952559d688ed61d8",
+          "md5": "59ed0a3c8833f0d927c44596ed77f467"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-web-3.5.14-javadoc.jar",
+          "url": "spring-boot-starter-web-3.5.14-javadoc.jar",
+          "size": 4805,
+          "sha512": "cb844710dc07acaa40e887ab24d22f754ef0f0d32206e885ef1c1f7bd6b01850d09c7bd87e53c6ec91a8f9bee4c386537bcd6fb0f694c729d0138239ea727a55",
+          "sha256": "030b6fec832e861c8bf0ae94ab1c750ea5aedee79e39c9cbc38c389c079e9d89",
+          "sha1": "05ee8f5240c3ca3e31ade689d3b0f902c45c6e08",
+          "md5": "87e986afa733173625693c8a8a674e84"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-web-3.5.14-sources.jar",
+          "url": "spring-boot-starter-web-3.5.14-sources.jar",
+          "size": 4805,
+          "sha512": "cb844710dc07acaa40e887ab24d22f754ef0f0d32206e885ef1c1f7bd6b01850d09c7bd87e53c6ec91a8f9bee4c386537bcd6fb0f694c729d0138239ea727a55",
+          "sha256": "030b6fec832e861c8bf0ae94ab1c750ea5aedee79e39c9cbc38c389c079e9d89",
+          "sha1": "05ee8f5240c3ca3e31ade689d3b0f902c45c6e08",
+          "md5": "87e986afa733173625693c8a8a674e84"
+        }
+      ]
+    }
+  ]
+}

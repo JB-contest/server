@@ -1,0 +1,58 @@
+{
+  "checklist": [
+    {
+      "id": 1,
+      "type": "REQUIRED",
+      "description": "금리 정보 포함",
+      "keyword": "금리",
+      "riskLevel": "HIGH",
+      "violationTypes": ["필수항목 누락"],
+      "lawMappings": ["대부업법 제6조"]
+    },
+    {
+      "id": 2,
+      "type": "REQUIRED",
+      "description": "연체이자율 안내 포함",
+      "keyword": "연체",
+      "riskLevel": "HIGH",
+      "violationTypes": ["필수항목 누락"],
+      "lawMappings": ["대부업법 제6조"]
+    },
+    {
+      "id": 3,
+      "type": "REQUIRED",
+      "description": "상환방법 안내 포함",
+      "keyword": "상환",
+      "riskLevel": "MEDIUM",
+      "violationTypes": ["필수항목 누락"],
+      "lawMappings": ["은행법 시행령 제18조의2"]
+    },
+    {
+      "id": 4,
+      "type": "PROHIBITED",
+      "description": "100% 단정 표현 금지",
+      "keyword": "100%",
+      "riskLevel": "HIGH",
+      "violationTypes": ["과장·단정 표현"],
+      "lawMappings": ["표시광고법 제3조 2항"]
+    },
+    {
+      "id": 5,
+      "type": "PROHIBITED",
+      "description": "최저금리 단정 표현 금지",
+      "keyword": "최저금리",
+      "riskLevel": "MEDIUM",
+      "violationTypes": ["비교광고 위반"],
+      "lawMappings": ["표시광고법 제3조 3항"]
+    },
+    {
+      "id": 6,
+      "type": "PROHIBITED",
+      "description": "당일 승인 단정 표현 금지",
+      "keyword": "당일 승인",
+      "riskLevel": "HIGH",
+      "violationTypes": ["과장·단정 표현"],
+      "lawMappings": ["표시광고법 제3조 2항"]
+    }
+  ]
+}

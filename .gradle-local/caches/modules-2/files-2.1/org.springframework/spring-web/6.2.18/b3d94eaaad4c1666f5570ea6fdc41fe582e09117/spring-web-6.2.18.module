@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-web",
+    "version": "6.2.18",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "io.micrometer",
+          "module": "micrometer-observation",
+          "version": {
+            "requires": "1.15.11"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-web-6.2.18.jar",
+          "url": "spring-web-6.2.18.jar",
+          "size": 2094948,
+          "sha512": "4725d0bb19966d8ed4349f735fc05eb7cf129975a461174401d74310b1df01056c0fa893401d926e5f147f88bb342a353da79f3efe9e8fe537d01b7969bc4d3c",
+          "sha256": "db5b1324a1aa1fa1782175375ce7dd858c946c02cad574cadd43ac6def5db9c7",
+          "sha1": "0ac559d752f215711184cb1bdcc941c83eef2cf3",
+          "md5": "e49dc528a074ac1aaab2650a9ec76ec5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "io.micrometer",
+          "module": "micrometer-observation",
+          "version": {
+            "requires": "1.15.11"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-web-6.2.18.jar",
+          "url": "spring-web-6.2.18.jar",
+          "size": 2094948,
+          "sha512": "4725d0bb19966d8ed4349f735fc05eb7cf129975a461174401d74310b1df01056c0fa893401d926e5f147f88bb342a353da79f3efe9e8fe537d01b7969bc4d3c",
+          "sha256": "db5b1324a1aa1fa1782175375ce7dd858c946c02cad574cadd43ac6def5db9c7",
+          "sha1": "0ac559d752f215711184cb1bdcc941c83eef2cf3",
+          "md5": "e49dc528a074ac1aaab2650a9ec76ec5"
+        }
+      ]
+    }
+  ]
+}

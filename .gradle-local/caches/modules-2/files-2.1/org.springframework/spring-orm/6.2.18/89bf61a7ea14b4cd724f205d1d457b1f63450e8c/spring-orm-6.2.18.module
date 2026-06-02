@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-orm",
+    "version": "6.2.18",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "6.2.18"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-orm-6.2.18.jar",
+          "url": "spring-orm-6.2.18.jar",
+          "size": 235313,
+          "sha512": "2beae176d30b12360d16ac031a23879acf9c975c1dc70b5ac4e44f06846309c78494d2256e047c3636d0be2e09b7d5cab58cadb8273d22ee5228b5c26dfd9f0c",
+          "sha256": "4e38ad57053f37a86b57e78f9a3eb2425d875fff5de09148b703ef6e596fa930",
+          "sha1": "ac20313e6edf76c976764d30b69ffe74cc59fa67",
+          "md5": "ddcd5675e56b4744af51cfa26c8f8cf2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.2.18"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "6.2.18"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-orm-6.2.18.jar",
+          "url": "spring-orm-6.2.18.jar",
+          "size": 235313,
+          "sha512": "2beae176d30b12360d16ac031a23879acf9c975c1dc70b5ac4e44f06846309c78494d2256e047c3636d0be2e09b7d5cab58cadb8273d22ee5228b5c26dfd9f0c",
+          "sha256": "4e38ad57053f37a86b57e78f9a3eb2425d875fff5de09148b703ef6e596fa930",
+          "sha1": "ac20313e6edf76c976764d30b69ffe74cc59fa67",
+          "md5": "ddcd5675e56b4744af51cfa26c8f8cf2"
+        }
+      ]
+    }
+  ]
+}
