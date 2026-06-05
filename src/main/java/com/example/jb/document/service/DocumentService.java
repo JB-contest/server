@@ -146,7 +146,7 @@ public class DocumentService {
 
 	private ViolationTextResponse toViolationTextResponse(ViolationText v) {
 		return new ViolationTextResponse(v.getId(), v.getValidationResult().getId(),
-				v.getViolationText(), v.getRiskLevel(), v.getViolationTypes(), v.getLawMappings(), v.getCreatedAt());
+				v.getViolationText(), v.getViolationReason(), v.getRiskLevel(), v.getViolationTypes(), v.getLawMappings(), v.getCreatedAt());
 	}
 
 	private DocumentResponse toResponse(Document document) {

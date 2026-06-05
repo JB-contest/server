@@ -37,6 +37,9 @@ public class ViolationText {
 	@Lob
 	private String violationText;
 
+	@Lob
+	private String violationReason;
+
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 20)
 	private RiskLevel riskLevel;

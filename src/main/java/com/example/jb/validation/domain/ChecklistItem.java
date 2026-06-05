@@ -6,7 +6,7 @@ public record ChecklistItem(
 		int id,
 		String type,
 		String description,
-		String keyword,
+		List<String> keywords,
 		String riskLevel,
 		List<String> violationTypes,
 		List<String> lawMappings

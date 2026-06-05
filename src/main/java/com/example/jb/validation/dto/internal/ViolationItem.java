@@ -5,6 +5,7 @@ import java.util.List;
 
 public record ViolationItem(
 		String violationText,
+		String violationReason,
 		RiskLevel riskLevel,
 		List<String> violationTypes,
 		List<String> lawMappings

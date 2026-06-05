@@ -77,6 +77,7 @@ public class ValidationOrchestrator {
 							ViolationText.builder()
 									.validationResult(savedResult)
 									.violationText(v.violationText())
+									.violationReason(v.violationReason())
 									.riskLevel(v.riskLevel())
 									.violationTypes(toJsonArray(v.violationTypes()))
 									.lawMappings(toJsonArray(v.lawMappings()))

@@ -7,6 +7,7 @@ public record ViolationTextResponse(
 		Long id,
 		Long resultId,
 		String violationText,
+		String violationReason,
 		RiskLevel riskLevel,
 		String violationTypes,
 		String lawMappings,
