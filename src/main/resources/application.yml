@@ -1,6 +1,6 @@
 ai:
   predict:
-    url: http://localhost:8000
+    url: http://54.116.27.60:8000
 
 spring:
   datasource:

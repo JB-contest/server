@@ -66,11 +66,11 @@ public class ChecklistValidationService {
 
 			if (violated) {
 				String violationText = item.type().equals("REQUIRED")
-						? item.violationTypes().isEmpty() ? "" : item.violationTypes().get(0)
+						? item.keywords().get(0)
 						: item.keywords().stream().filter(content::contains).findFirst().orElse(item.keywords().get(0));
 				violations.add(new ViolationItem(
 						violationText,
-						item.description(),
+						item.description().replace("{}", violationText),
 						RiskLevel.valueOf(item.riskLevel()),
 						item.violationTypes(),
 						item.lawMappings()

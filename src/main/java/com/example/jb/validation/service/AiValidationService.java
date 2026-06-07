@@ -9,10 +9,12 @@ import com.example.jb.validation.dto.internal.ViolationItem;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
+import java.net.http.HttpClient;
 import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
+import org.springframework.http.client.JdkClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -26,8 +28,14 @@ public class AiValidationService {
 			@Value("${ai.predict.url}") String aiPredictUrl,
 			@Value("classpath:legal-basis.json") Resource legalBasisResource,
 			ObjectMapper objectMapper) {
+		// AI 서버(uvicorn)는 HTTP/1.1만 지원하는데, 기본 HttpClient는 HTTP/2를 우선 협상하면서
+		// 요청 바디가 유실되는 문제가 있어 HTTP/1.1로 고정한다.
+		HttpClient httpClient = HttpClient.newBuilder()
+				.version(HttpClient.Version.HTTP_1_1)
+				.build();
 		this.restClient = RestClient.builder()
 				.baseUrl(aiPredictUrl)
+				.requestFactory(new JdkClientHttpRequestFactory(httpClient))
 				.build();
 		try {
 			this.legalBasis = objectMapper.readValue(
@@ -55,7 +63,7 @@ public class AiValidationService {
 					LegalBasisEntry basis = legalBasis.get(v.label());
 					return new ViolationItem(
 							v.keyword(),
-							basis != null ? basis.description() : "",
+							basis != null ? basis.description().replace("{}", v.keyword()) : "",
 							RiskLevel.valueOf(v.riskLevel()),
 							basis != null ? basis.violationTypes() : List.of(),
 							basis != null ? basis.lawMappings() : List.of()
